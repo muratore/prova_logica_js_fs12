@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    
+    <div class="calc-container">
+    <div class="title board">
+        <h1>Calcular IMC</h1>
+    </div>
+
+    <form id="imc-form" action="">
+       <div class="input-form">
+           <div class="input-control">
+               <label for="height">Informe a sua altura:</label> 
+               <input type="text" name="height" placeholder="Exemplo: 1,80">
+           </div>
+       </div>
+       <div class="input-form">
+            <div class="input-control">
+                <label for="weight">Informe o seu peso:</label>
+                <input type="text" name="weight" placeholder="Exemplo: 79,5" >
+            </div>
+       </div>
+        <div class="btns">
+            <button type="submit">Calcular</button>
+            <button class="clear-btn">Limpar</button>
+        </div>
+       
+    </form>
+    </div>
+   <div class="hide result-container">
+    <p id="imc-number">
+        Seu IMC: &nbsp; <span></span>  
+    </p>
+    <p id="imc-info">
+        Sutuação: <span></span>
+    </p>
+    <p class="header-title">Confira as Classificações</p>
+    <div id="imc-table">
+        <div class="table-header">
+            <h4>IMC</h4>
+            <h4>Classificação</h4>
+            <h4>Obesidade</h4>
+        </div>
+        
+    </div>
+    <button id="back-btn">Voltar</button>
+   </div>
+    
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
