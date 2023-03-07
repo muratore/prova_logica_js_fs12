@@ -45,9 +45,13 @@ const nomeCompleto = (nome)=>{
    const mes = data.getMonth()
 
 
-   const diaMesAno = `0${dia}0${mes}${ano}`
+   const dataFormatZero = (_dia)=>{
+      const diaString = _dia.toString().length;
+      return parseInt(diaString) === 1 ? `0${_dia}`: _dia ;
+   }
 
-   
+   const diaMesAno = `${dataFormatZero(dia)}${dataFormatZero(mes)}${ano}`
+
    console.log(diaMesAno);
    const fullName = nome.split(' ')
 
